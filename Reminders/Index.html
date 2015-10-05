@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html ng-app="tsAngularApp">
+<head>
+    <title>Index</title>
+    <meta charset="utf-8" />
+
+    <script src="Scripts/angular.js"></script>
+    <script src="controller/Helloworld.js"></script>
+    <script src="app/Start.js"></script>
+</head>
+<body ng-controller="HelloWorld as vm">
+
+<input type="text"
+       ng-model="vm.name"
+       placeholder="Enter name" />
+
+    <p>Hello world<span ng-show="vm.name"> my name is {{vm.name}}!</span></p>
+
+</body>
+</html>
